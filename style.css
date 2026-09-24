@@ -219,3 +219,220 @@ footer {
     }
 
 }
+
+/* login-page CSS */
+
+
+.login-page {
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8FAFC;
+}
+
+/* Main login card */
+
+.login-container {
+    width: 100%;
+    max-width: 950px;
+    min-height: 540px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.10);
+}
+
+/* Left side */
+
+.branding-section {
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #4F46E5;
+    color: #FFFFFF;
+}
+
+.brand-label {
+    margin: 0 0 1rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+}
+
+.branding-section h2 {
+    margin: 0 0 1.2rem;
+    font-size: 2.4rem;
+    line-height: 1.15;
+}
+
+.branding-section p:not(.brand-label) {
+    margin: 0;
+    max-width: 390px;
+
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Right side */
+
+.login-content {
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FFFFFF;
+}
+
+.login-heading {
+    margin: 0 0 2rem;
+
+    color: #4F46E5;
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.login-content form {
+    width: 100%;
+    max-width: 360px;
+}
+
+.mail,
+.pass {
+    padding: 0;
+    margin-bottom: 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.lab {
+    margin-bottom: 0.5rem;
+    color: #0F172A;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.login-content input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 0.8rem 0.9rem;
+
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+
+    background-color: #FFFFFF;
+
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: #0F172A;
+
+    outline: none;
+}
+
+.login-content input:focus {
+    border-color: #4F46E5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+/* Login button */
+
+.submit {
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.submit-btn {
+    width: 100%;
+
+    padding: 0.8rem 1rem;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #4F46E5;
+    color: #FFFFFF;
+
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #4338CA;
+}
+
+/* Register section */
+
+.options {
+    padding: 0;
+    margin-top: 1.25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.35rem;
+
+    color: #64748B;
+}
+
+.options p {
+    margin: 0;
+}
+
+.options a {
+    color: #4F46E5;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 700px) {
+
+    .login-page {
+        padding: 1rem;
+    }
+
+    .login-container {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .branding-section {
+        padding: 2rem 1.5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .branding-section h2 {
+        font-size: 2rem;
+    }
+
+    .login-content {
+        padding: 2rem 1.5rem;
+    }
+
+}
